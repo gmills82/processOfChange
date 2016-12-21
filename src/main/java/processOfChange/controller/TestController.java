@@ -1,13 +1,13 @@
 package processOfChange.controller;
 
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class SampleController {
+public class TestController {
 
-	@RequestMapping("/")
-	public String index() {
+	@RequestMapping("/test")
+	public String test() {
 		return "Greetings from Spring Boot!";
 	}
 
