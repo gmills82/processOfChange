@@ -8,7 +8,7 @@ import groovy.transform.EqualsAndHashCode;
  */
 @EqualsAndHashCode
 public class Belief {
-	protected enum BeliefType {
+	public enum BeliefType {
 		VULNERABILITY, POWER
 	}
 	private String statement;

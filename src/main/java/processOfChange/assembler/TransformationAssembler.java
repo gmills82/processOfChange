@@ -2,11 +2,13 @@ package processOfChange.assembler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import processOfChange.assembler.processSteps.GriefAssembler;
+import processOfChange.assembler.processSteps.HeroBuildingAssembler;
+import processOfChange.assembler.processSteps.LossOfControlAssembler;
+import processOfChange.assembler.processSteps.MindWarfareAssembler;
+import processOfChange.assembler.processSteps.OmenAssembler;
+import processOfChange.assembler.processSteps.UnworthyAppeasementAssembler;
 import processOfChange.model.Transformation;
-import processOfChange.model.processSteps.HeroBuilding;
-import processOfChange.model.processSteps.LossOfControl;
-import processOfChange.model.processSteps.MindWarfare;
-import processOfChange.model.processSteps.UnworthyAppeasements;
 
 /**
  * @author Grant Mills
@@ -15,14 +17,14 @@ import processOfChange.model.processSteps.UnworthyAppeasements;
 @Component
 public class TransformationAssembler {
 	private OmenAssembler mOmenAssembler;
-	private UnworthyAppeasementsAssembler mUnworthyAppeasementsAssembler;
+	private UnworthyAppeasementAssembler mUnworthyAppeasementsAssembler;
 	private MindWarfareAssembler mMindWarfareAssembler;
 	private LossOfControlAssembler mLossOfControlAssembler;
 	private GriefAssembler mGriefAssembler;
 	private HeroBuildingAssembler mHeroBuildingAssembler;
 
 	@Autowired
-	public TransformationAssembler(OmenAssembler omenAssembler, UnworthyAppeasementsAssembler unworthyAppeasementsAssembler, MindWarfareAssembler mindWarfareAssembler, LossOfControlAssembler lossOfControlAssembler, GriefAssembler griefAssembler, HeroBuildingAssembler heroBuildingAssembler) {
+	public TransformationAssembler(OmenAssembler omenAssembler, UnworthyAppeasementAssembler unworthyAppeasementsAssembler, MindWarfareAssembler mindWarfareAssembler, LossOfControlAssembler lossOfControlAssembler, GriefAssembler griefAssembler, HeroBuildingAssembler heroBuildingAssembler) {
 		mOmenAssembler = omenAssembler;
 		mUnworthyAppeasementsAssembler = unworthyAppeasementsAssembler;
 		mMindWarfareAssembler = mindWarfareAssembler;

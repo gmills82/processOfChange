@@ -9,11 +9,11 @@ import java.util.List;
  * @since 12/21/16
  */
 @EqualsAndHashCode
-public class UnworthyAppeasements {
+public class UnworthyAppeasement {
 	private List<String> quickSolutionsThatFail;
 	private List<String> stressReactions;
 
-	public UnworthyAppeasements(List<String> quickSolutionsThatFail, List<String> stressReactions) {
+	public UnworthyAppeasement(List<String> quickSolutionsThatFail, List<String> stressReactions) {
 		this.quickSolutionsThatFail = quickSolutionsThatFail;
 		this.stressReactions = stressReactions;
 	}
