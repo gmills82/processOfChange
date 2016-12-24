@@ -22,7 +22,7 @@ public class PageController {
 
 	@RequestMapping("/")
 	public String index(Model model) {
-		model.addAttribute("processOfChange", mTransformationService.get());
+		model.addAttribute("processOfChange", mTransformationService.getHero());
 		return "index";
 	}
 

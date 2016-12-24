@@ -19,7 +19,11 @@ public class TransformationService {
 		mProcessAssembler = processAssembler;
 	}
 
-	public Transformation get() {
-		return mProcessAssembler.createTransformation();
+	public Transformation getHero() {
+		return mProcessAssembler.createTransformation(true);
+	}
+
+	public Transformation getVillain() {
+		return mProcessAssembler.createTransformation(false);
 	}
 }

@@ -1,5 +1,6 @@
 package processOfChange.assembler.processSteps;
 
+import org.springframework.stereotype.Component;
 import processOfChange.model.Belief;
 import processOfChange.model.Belief.BeliefType;
 import processOfChange.model.processSteps.HeroBuilding;
@@ -12,6 +13,7 @@ import java.util.Random;
  * @author Grant Mills
  * @since 12/21/16
  */
+@Component
 public class HeroBuildingAssembler {
 
 	public HeroBuilding createHeroBuilding() {
