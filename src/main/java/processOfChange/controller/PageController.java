@@ -26,4 +26,10 @@ public class PageController {
 		return "index";
 	}
 
+	@RequestMapping("/omen")
+	public String omen(Model model) {
+		model.addAttribute("omen", mTransformationService.getOmen());
+		return "omen";
+	}
+
 }
