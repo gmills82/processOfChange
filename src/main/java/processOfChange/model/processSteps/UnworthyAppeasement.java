@@ -10,6 +10,7 @@ import java.util.List;
  */
 @EqualsAndHashCode
 public class UnworthyAppeasement {
+	
 	private List<String> quickSolutionsThatFail;
 	private List<String> stressReactions;
 
