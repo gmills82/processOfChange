@@ -1,9 +1,6 @@
 package processOfChange.model.processSteps;
 
 import groovy.transform.EqualsAndHashCode;
-import processOfChange.model.processComponents.ExternalPressure;
-import processOfChange.model.processComponents.SubconsciousManifestation;
-import processOfChange.model.processComponents.SubconsciousTruth;
 
 /**
  * @author Grant Mills
@@ -11,25 +8,25 @@ import processOfChange.model.processComponents.SubconsciousTruth;
  */
 @EqualsAndHashCode
 public class Omen {
-	private ExternalPressure externalPressure;
-	private SubconsciousTruth subconsciousTruth;
-	private SubconsciousManifestation subconsciousManifestation;
+	private String externalPressure;
+	private String subconsciousTruth;
+	private String subconsciousManifestation;
 
-	public Omen(ExternalPressure externalPressure, SubconsciousTruth subconsciousTruth, SubconsciousManifestation subconsciousManifestation) {
+	public Omen(String externalPressure, String subconsciousTruth, String subconsciousManifestation) {
 		this.externalPressure = externalPressure;
 		this.subconsciousTruth = subconsciousTruth;
 		this.subconsciousManifestation = subconsciousManifestation;
 	}
 
-	public SubconsciousTruth getSubconsciousTruth() {
+	public String getSubconsciousTruth() {
 		return subconsciousTruth;
 	}
 
-	public ExternalPressure getExternalPressure() {
+	public String getExternalPressure() {
 		return externalPressure;
 	}
 
-	public SubconsciousManifestation getSubconsciousManifestation() {
+	public String getSubconsciousManifestation() {
 		return subconsciousManifestation;
 	}
 }

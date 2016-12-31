@@ -3,9 +3,7 @@ package processOfChange.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import processOfChange.assembler.TransformationAssembler;
-import processOfChange.assembler.processSteps.OmenAssembler;
 import processOfChange.model.Transformation;
-import processOfChange.model.processSteps.Omen;
 
 /**
  * @author Grant Mills
@@ -15,12 +13,10 @@ import processOfChange.model.processSteps.Omen;
 public class TransformationService {
 
 	private TransformationAssembler mProcessAssembler;
-	private OmenAssembler mOmenAssembler;
 
 	@Autowired
-	public TransformationService(TransformationAssembler processAssembler, OmenAssembler omenAssembler) {
+	public TransformationService(TransformationAssembler processAssembler) {
 		mProcessAssembler = processAssembler;
-		mOmenAssembler = omenAssembler;
 	}
 
 	public Transformation getHero() {
@@ -29,9 +25,5 @@ public class TransformationService {
 
 	public Transformation getVillain() {
 		return mProcessAssembler.createTransformation(false);
-	}
-
-	public Omen getOmen() {
-		return mOmenAssembler.createOmen();
 	}
 }
