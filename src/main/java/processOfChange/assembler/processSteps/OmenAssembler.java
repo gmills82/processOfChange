@@ -1,6 +1,7 @@
 package processOfChange.assembler.processSteps;
 
 import org.springframework.stereotype.Component;
+import processOfChange.data.OmenData;
 import processOfChange.model.processSteps.Omen;
 
 /**
@@ -11,6 +12,6 @@ import processOfChange.model.processSteps.Omen;
 public class OmenAssembler {
 
 	public Omen createOmen(){
-		return new Omen("blah", "blah", "blah");
+		return new Omen(OmenData.getRandomEp(), OmenData.getRandomSt(), OmenData.getRandomSm());
 	}
 }
