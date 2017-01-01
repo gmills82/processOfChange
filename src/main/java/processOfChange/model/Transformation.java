@@ -15,7 +15,7 @@ import processOfChange.model.processSteps.UnworthyAppeasement;
 @EqualsAndHashCode
 public class Transformation {
 	private Omen omen;
-	private UnworthyAppeasement mUnworthyAppeasement;
+	private UnworthyAppeasement unworthyAppeasement;
 	private MindWarfare mindWarfare;
 	private LossOfControl lossOfControl;
 	private Grief grief;
@@ -23,7 +23,7 @@ public class Transformation {
 
 	public Transformation(Omen omen, UnworthyAppeasement unworthyAppeasement, MindWarfare mindWarfare, LossOfControl lossOfControl, Grief grief) {
 		this.omen = omen;
-		this.mUnworthyAppeasement = unworthyAppeasement;
+		this.unworthyAppeasement = unworthyAppeasement;
 		this.mindWarfare = mindWarfare;
 		this.lossOfControl = lossOfControl;
 		this.grief = grief;
@@ -31,7 +31,7 @@ public class Transformation {
 
 	public Transformation(Omen omen, UnworthyAppeasement unworthyAppeasement, MindWarfare mindWarfare, LossOfControl lossOfControl, Grief grief, HeroBuilding heroBuilding) {
 		this.omen = omen;
-		this.mUnworthyAppeasement = unworthyAppeasement;
+		this.unworthyAppeasement = unworthyAppeasement;
 		this.mindWarfare = mindWarfare;
 		this.lossOfControl = lossOfControl;
 		this.grief = grief;
@@ -43,7 +43,7 @@ public class Transformation {
 	}
 
 	public UnworthyAppeasement getUnworthyAppeasement() {
-		return mUnworthyAppeasement;
+		return unworthyAppeasement;
 	}
 
 	public MindWarfare getMindWarfare() {

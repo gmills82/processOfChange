@@ -5,6 +5,26 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="'My external pressure is ' + ${processOfChange.omen.externalPressure} + '!'" />
+<h1>Transformation</h1>
+<h2>Omen</h2>
+<ul>
+    <li th:text="'My external pressure is ' + ${processOfChange.omen.externalPressure} + '!'" ></li>
+    <li th:text="'My subconscious truth is ' + ${processOfChange.omen.subconsciousTruth} + '!'"></li>
+    <li th:text="'My subconscious manifestation is ' + ${processOfChange.omen.subconsciousManifestation} + '!'"></li>
+</ul>
+<h2>Unworthy Appeasements</h2>
+<ul>
+    <li>My quick solutions destined to fail were:
+        <ul>
+            <li th:each="solution : ${processOfChange.unworthyAppeasement.quickSolutionsThatFail}" th:text="${solution}"></li>
+        </ul>
+    </li>
+    <li>My stress reactions were:
+        <ul>
+            <li th:each="reaction : ${processOfChange.unworthyAppeasement.stressReactions}" th:text="${reaction}"></li>
+        </ul>
+    </li>
+</ul>
+
 </body>
 </html>
