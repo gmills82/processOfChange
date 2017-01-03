@@ -49,13 +49,14 @@
             <li th:each="defeat : ${processOfChange.lossOfControl.stringOfDefeats}" th:text="${defeat}"></li>
         </ul>
     </li>
+    <li th:text="'The most pressing question I have for my maker is: ' + ${processOfChange.lossOfControl.questionForItsMaker}"></li>
 </ul>
 <h3>Grief</h3>
 <ul>
     <li>My most prominent stages of grief were:
-        <ul>
+        <ol>
             <li th:each="stage : ${processOfChange.grief.prominentStagesOfGrief}" th:text="${stage}"></li>
-        </ul>
+        </ol>
     </li>
     <li th:text="'The question that fuels my grief is: ' + ${processOfChange.grief.questionsForInternalDrive}"></li>
 </ul>

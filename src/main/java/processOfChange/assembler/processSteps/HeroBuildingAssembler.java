@@ -1,6 +1,6 @@
 package processOfChange.assembler.processSteps;
 
-import org.springframework.data.domain.Range;
+import groovy.lang.IntRange;
 import org.springframework.stereotype.Component;
 import processOfChange.data.HeroBuildingData;
 import processOfChange.model.Belief;
@@ -27,7 +27,7 @@ public class HeroBuildingAssembler {
 
 	private Boolean isBeliefStructureBalanced(List<Belief> beliefs) {
 		Boolean isBalanced = false;
-		Range<Integer> allowedBalanceRange = new Range<Integer>(-1,2);
+		IntRange allowedBalanceRange = new IntRange(-1,2);
 		Integer count = 0;
 
 		for(Belief belief : beliefs) {
