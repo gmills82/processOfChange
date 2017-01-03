@@ -12,6 +12,6 @@ import processOfChange.model.processSteps.Omen;
 public class OmenAssembler {
 
 	public Omen createOmen(){
-		return new Omen(OmenData.getRandomEp(), OmenData.getRandomSt(), OmenData.getRandomSm());
+		return new Omen(OmenData.getRandomEp(), OmenData.getRandomSt());
 	}
 }

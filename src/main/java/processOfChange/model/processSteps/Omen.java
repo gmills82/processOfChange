@@ -10,12 +10,10 @@ import groovy.transform.EqualsAndHashCode;
 public class Omen {
 	private String externalPressure;
 	private String subconsciousTruth;
-	private String subconsciousManifestation;
 
-	public Omen(String externalPressure, String subconsciousTruth, String subconsciousManifestation) {
+	public Omen(String externalPressure, String subconsciousTruth) {
 		this.externalPressure = externalPressure;
 		this.subconsciousTruth = subconsciousTruth;
-		this.subconsciousManifestation = subconsciousManifestation;
 	}
 
 	public String getSubconsciousTruth() {
@@ -24,9 +22,5 @@ public class Omen {
 
 	public String getExternalPressure() {
 		return externalPressure;
-	}
-
-	public String getSubconsciousManifestation() {
-		return subconsciousManifestation;
 	}
 }

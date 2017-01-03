@@ -14,17 +14,40 @@ public class UnworthyAppeasementData {
 	public static List<String> stressReactions = new ArrayList<>();
 
 	private static String[] quickData = {
-		"all of the easy solutions",
-		"rub dirt on it",
-		"pray to the heavens for answers",
-		"distracts himself with drink and easy women"
+		"I ignore all internal dialogue",
+		"Man/Woman up",
+		"I pray to the heavens for answers",
+		"I distract myself with drink and easy women",
+		"I justify why its not a big deal",
+		"I invest myself wholeheartedly into my hobbies or work",
+		"I seek out wealth and success",
+		"I perform charitable acts for others around town",
+		"I give of myself to other regardless of my needs",
+		"I bend over backwards to please others"
 	};
 
 	private static String[] stressData = {
-		"drinks all of the wine",
-		"breaks out in hives",
-		"eats when not hungry",
-		"picks fights"
+		"I break out in hives whenever ... is mentioned",
+		"I eat when not hungry",
+		"I pick fights",
+		"Facial ticks",
+		"Profuse sweating in cold weather",
+		"Swearing and abusive language",
+		"Crankiness",
+		"I am insulting to the people I care about",
+		"I kill small animals",
+		"I seek comfort in prostitutes",
+		"I talk over others too often",
+		"I seek attention to comfort my pain",
+		"I've begun to drink heavily",
+		"I've stopped drinking",
+		"I hold my hands a little too close to the fire when no one is watching",
+		"I'm secretly aroused by death",
+		"I pluck out hairs on my body to acknowledge the pain inside",
+		"I have extra gas",
+		"I cry over things that shouldn't be upsetting",
+		"I laugh as caustic and harsh jokes",
+		"One of my appendages has gone numb"
 	};
 
 	static {

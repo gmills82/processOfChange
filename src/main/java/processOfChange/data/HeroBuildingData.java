@@ -30,6 +30,10 @@ public class HeroBuildingData {
 		new Belief("I believe magic is a terrible weapon that must be controlled", BeliefType.VULNERABILITY),
 		new Belief("I believe X magical artifact could be used by me for good", BeliefType.POWER),
 		new Belief("I believe X magical artifact is too powerful and must be destroyed", BeliefType.VULNERABILITY),
+		new Belief("I believe pain is the only teacher and I have a PhD", BeliefType.POWER),
+		new Belief("I believe we must not exert force against our enemies but instead use their force against themselves", BeliefType.POWER),
+		new Belief("I believe words are powerful and too often others use them as weapons needlessly", BeliefType.VULNERABILITY),
+		new Belief("I believe if all of existence was destroyed at once it would be preferential to the suffering of this life", BeliefType.VULNERABILITY),
 	};
 
 	private static String[] purposeData = {
@@ -37,7 +41,7 @@ public class HeroBuildingData {
 		"justice",
 		"forgiveness",
 		"righting my wrongs",
-		"attoning for sins",
+		"atone for sins",
 		"town building",
 		"nation building",
 		"protection",
@@ -68,7 +72,10 @@ public class HeroBuildingData {
 		"I was given political power and I use it for...",
 		"I am an oracle who offers wisdom to other",
 		"I am a conduit for the will of my god and their will manifests around me as...",
-		"Helps children when they fall to the ground"
+		"Helps children when they fall to the ground",
+		"Creates art wherever he/she goes",
+		"I shape the land where I walk",
+		"I use my words to alter the opinions of others around me"
 	};
 
 	static {
