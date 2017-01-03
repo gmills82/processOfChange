@@ -9,6 +9,7 @@ import processOfChange.assembler.processSteps.MindWarfareAssembler;
 import processOfChange.assembler.processSteps.OmenAssembler;
 import processOfChange.assembler.processSteps.UnworthyAppeasementAssembler;
 import processOfChange.model.Transformation;
+import processOfChange.util.PC;
 
 /**
  * @author Grant Mills
@@ -40,7 +41,9 @@ public class TransformationAssembler {
 			mUnworthyAppeasementsAssembler.createUnworthyAppeasement(),
 			mMindWarfareAssembler.createMindWarfare(),
 			mLossOfControlAssembler.createLossOfControl(),
-			mGriefAssembler.createGrief()
+			mGriefAssembler.createGrief(),
+			PC.PClass.random(),
+			PC.PRace.random()
 		);
 
 		//If is hero add a HeroBuilding

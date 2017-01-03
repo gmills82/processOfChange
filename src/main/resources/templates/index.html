@@ -5,14 +5,20 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<h1>Transformation</h1>
-<h2>Omen</h2>
+<h1>The Hero's Inn</h1>
+<h2>Character Info</h2>
+<ul>
+    <li th:text="'My class is: ' + ${processOfChange.playerClass}"></li>
+    <li th:text="'My race is: ' + ${processOfChange.playerRace}"></li>
+</ul>
+<h2>Transformation</h2>
+<h3>Omen</h3>
 <ul>
     <li th:text="'My external pressure is ' + ${processOfChange.omen.externalPressure} + '!'" ></li>
     <li th:text="'My subconscious truth is ' + ${processOfChange.omen.subconsciousTruth} + '!'"></li>
     <li th:text="'My subconscious manifestation is ' + ${processOfChange.omen.subconsciousManifestation} + '!'"></li>
 </ul>
-<h2>Unworthy Appeasements</h2>
+<h3>Unworthy Appeasements</h3>
 <ul>
     <li>My quick solutions destined to fail were:
         <ul>
@@ -25,6 +31,44 @@
         </ul>
     </li>
 </ul>
-
+<h3>Mind Warfare</h3>
+<ul>
+    <li th:text="'My overwhelming subconscious manifestation was: ' + ${processOfChange.mindWarfare.overwhelmingSubconsciousManifestation}"></li>
+    <li>My character alterations were:
+        <ul>
+            <li th:each="alteration : ${processOfChange.mindWarfare.characterAlterations}" th:text="${alteration}"></li>
+        </ul>
+    </li>
+</ul>
+<h3>Loss of Control</h3>
+<ul>
+    <li th:text="'My object of greatest loss was: ' + ${processOfChange.lossOfControl.objectOfGreatestLoss}"></li>
+    <li th:text="'My description of my internal pain was: ' + ${processOfChange.lossOfControl.descriptionOfInternalPain}"></li>
+    <li>My string of defeats were:
+        <ul>
+            <li th:each="defeat : ${processOfChange.lossOfControl.stringOfDefeats}" th:text="${defeat}"></li>
+        </ul>
+    </li>
+</ul>
+<h3>Grief</h3>
+<ul>
+    <li>My most prominent stages of grief were:
+        <ul>
+            <li th:each="stage : ${processOfChange.grief.prominentStagesOfGrief}" th:text="${stage}"></li>
+        </ul>
+    </li>
+    <li th:text="'The question that fuels my grief is: ' + ${processOfChange.grief.questionsForInternalDrive}"></li>
+</ul>
+<h3>Hero Building</h3>
+<ul>
+    <li>My beliefs are:
+        <ul>
+            <li th:each="belief : ${processOfChange.heroBuilding.beliefs}" th:text="${belief.statement}"></li>
+        </ul>
+    </li>
+    <li th:text="'My purpose is: ' + ${processOfChange.heroBuilding.purpose}"></li>
+    <li th:text="'I changed myself in this way: ' + ${processOfChange.heroBuilding.changeInCharacter}"></li>
+    <li th:text="'I change my world in this way: ' + ${processOfChange.heroBuilding.changeInWorld}"></li>
+</ul>
 </body>
 </html>
